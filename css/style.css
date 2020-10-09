@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* padding: 0; */
+  line-height: 1.5; /* межстрочный интервал */
+  background: linear-gradient(to bottom right, #0079bf, #5067c5);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  background: linear-gradient(to bottom right, #0079bf, #5067c5);
+  color: #fff;
+}
+.descrip {
+  background: linear-gradient(to bottom right, #0079bf, #5067c5);
+  color: #fff;
+  padding: 10px 20%;
+  text-align: left;
+  font-weight: 500;
+  font-size: medium;
+}
+
+.nav_bar {
+  background-color: #0079bf;
+  display: none;
+}
+
+@media screen and (max-width: 500px) 
+  {
+    .nav_bar {display: block;}
+    .reg_style {display: none;}
+  }
+
+.background-img {
+  background: linear-gradient(to bottom right, #0079bf, #5067c5);
+  color: #fff;
+  justify-content: center;
+  text-align: left;
+  font-weight: 500;
+  font-size: medium;
+  display: flex;
+}
+
+@media screen and (max-width: 610px)
+{
+  .background-img {transform: scale(0.8);}
+}
+
+@media screen and (max-width: 530px)
+{
+  .background-img {transform: scale(0.6);}
+}
+
+@media screen and (max-width: 380px)
+{
+  .background-img {display: none;}
+}
+
+.anchor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+}
+
+.anchor a:link {
+  color: white;
+  }
+
+.anchor a:visited {
+  color: mintcream;
+}
+
+.anchor a:focus {
+  background-color: white;
+  color: black;
+}
+
+.anchor  a:hover {
+  background-color: white;
+  color: black;
+}
+
+.reg_style a:link {
+    color: white;
+    }
+
+.reg_style a:visited {
+    color: mintcream;
+  }
+
+.reg_style a:focus {
+    background-color: white;
+    color: black;
+  }
+
+ .reg_style  a:hover {
+    background-color: white;
+    color: black;
+  }

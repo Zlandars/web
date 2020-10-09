@@ -1,0 +1,13 @@
+$primary_color: orange;
+$default_font_size: 32px;
+h1, h2, h3 {
+    color:red;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: $default_font_size * 4;
+}
+h2 {
+    font-size: $default_font_size * 3;
+}

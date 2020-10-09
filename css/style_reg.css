@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5; /*межстрочный интервал*/
+  text-align: center;
+
+}
+
+.background-pic {
+  display: block; 
+  height: 100%; 
+  width: 100%; 
+  padding: 0 0;
+}
+  
+@media screen and (max-width: 510px) 
+  {
+    .background-pic {display: none;}
+  }
+
+.bootstrap_cont {
+  display: flex;
+  padding: 10% 0;
+  width: 100%;
+  height: auto;
+justify-content: center;
+}
+
+.form-row {
+  display: flex;
+  width: 80%;
+  padding: 0 10px;
+}
+
+.trello-logo-image {
+  height: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /* justify-content: center; не выравнивает лого по центру???? */
+}
+
+.background-pic {
+  height: 100%;
+  width: 100%;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+body {
+  background: #f9fafc;
+}
