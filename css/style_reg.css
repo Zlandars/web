@@ -5,25 +5,46 @@
 
 }
 
+.background-pic_hidden {
+  display: none;
+  position: absolute;
+  z-index: -1; /*если здесь поставить 0, а на конент бутстрапа на 1 больше, то ничего не работает. Поэтому просто убрал z-index у бутстрапа*/
+  width: 100%; /*для выравнивания по центру*/
+  bottom: 0;
+}
+
 .background-pic {
   display: block; 
-  height: 100%; 
-  width: 100%; 
+ 
   padding: 0 0;
 }
   
-@media screen and (max-width: 510px) 
-  {
-    .background-pic {display: none;}
-  }
-
 .bootstrap_cont {
   display: flex;
   padding: 10% 0;
-  width: 100%;
   height: auto;
-justify-content: center;
+  justify-content: center;
 }
+
+@media screen and (max-width: 650px) 
+              and (max-height: 575px) 
+  {
+    .background-pic {display: none;}
+    .background-pic_hidden {display: block}
+  }
+
+@media screen and (max-width: 819px) 
+  {
+    .background-pic {display: none;}
+    .background-pic_hidden {display: block}
+  }
+
+  @media screen and (max-height: 424px) 
+  {
+    .background-pic {display: none;}
+    .bootstrap_cont {justify-content: center;}
+    .background-pic_hidden {display: block}
+  }  
 
 .form-row {
   display: flex;
@@ -55,6 +76,3 @@ justify-content: center;
   bottom: 0;
 }
 
-body {
-  background: #f9fafc;
-}

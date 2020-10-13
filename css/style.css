@@ -60,6 +60,7 @@
 
 .anchor {
   position: absolute;
+  display: block;
   bottom: 0;
   left: 0;
   color: white;
@@ -99,4 +100,11 @@
  .reg_style  a:hover {
     background-color: white;
     color: black;
+  }
+ .footer {
+   position: absolute;
+   display: block;
+   bottom: 0%;
+   width: 150px;
+   margin: 5px 10px;
   }
