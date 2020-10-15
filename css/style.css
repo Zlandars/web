@@ -3,23 +3,22 @@
   margin: 0;
   /* padding: 0; */
   line-height: 1.5; /* межстрочный интервал */
-  background: linear-gradient(to bottom right, #0079bf, #5067c5);
 }
 .nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
   align-items: center;
-  background: linear-gradient(to bottom right, #0079bf, #5067c5);
   color: #fff;
+  background: linear-gradient(to bottom right, #0079bf, #5067c5);
 }
 .descrip {
-  background: linear-gradient(to bottom right, #0079bf, #5067c5);
   color: #fff;
   padding: 10px 20%;
   text-align: left;
   font-weight: 500;
   font-size: medium;
+  background: linear-gradient(to bottom right, #0079bf, #5067c5);
 }
 
 .nav_bar {
@@ -34,13 +33,9 @@
   }
 
 .background-img {
+  z-index: -1;
   background: linear-gradient(to bottom right, #0079bf, #5067c5);
-  color: #fff;
-  justify-content: center;
-  text-align: left;
-  font-weight: 500;
-  font-size: medium;
-  display: flex;
+
 }
 
 @media screen and (max-width: 610px)
@@ -58,12 +53,27 @@
   .background-img {display: none;}
 }
 
-.anchor {
+footer {
+  display: flex;
   position: absolute;
-  display: block;
-  bottom: 0;
-  left: 0;
-  color: white;
+  bottom: 0%;
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+}
+
+.footer-img {
+  width: 150px;
+}
+.anchor {
+  position: fixed;
+  bottom: 0%;
+  right: 0;
+}
+
+/* Якорь на бэкграунд
+.anchor {
+
 }
 
 .anchor a:link {
@@ -82,6 +92,19 @@
 .anchor  a:hover {
   background-color: white;
   color: black;
+} */
+
+.reg_style {
+  display: inline-flex;
+  
+}
+
+.signin {
+
+}
+
+.signup {
+
 }
 
 .reg_style a:link {
@@ -100,11 +123,4 @@
  .reg_style  a:hover {
     background-color: white;
     color: black;
-  }
- .footer {
-   position: absolute;
-   display: block;
-   bottom: 0%;
-   width: 150px;
-   margin: 5px 10px;
   }
