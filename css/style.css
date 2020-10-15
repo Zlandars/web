@@ -3,6 +3,8 @@
   margin: 0;
   /* padding: 0; */
   line-height: 1.5; /* межстрочный интервал */
+  font-family: "Charlie Text",sans-serif;
+  text-align: center;
 }
 .nav {
   display: flex;
@@ -12,13 +14,13 @@
   color: #fff;
   background: linear-gradient(to bottom right, #0079bf, #5067c5);
 }
+
 .descrip {
   color: #fff;
   padding: 10px 20%;
   text-align: left;
   font-weight: 500;
   font-size: medium;
-  background: linear-gradient(to bottom right, #0079bf, #5067c5);
 }
 
 .nav_bar {
@@ -33,9 +35,8 @@
   }
 
 .background-img {
-  z-index: -1;
-  background: linear-gradient(to bottom right, #0079bf, #5067c5);
-
+  position: relative;
+  text-align: center;
 }
 
 @media screen and (max-width: 610px)
@@ -48,9 +49,15 @@
   .background-img {transform: scale(0.6);}
 }
 
+@media screen and (max-width: 480px)
+{
+  .background-img {transform: scale(0.4);}
+}
+
 @media screen and (max-width: 380px)
 {
   .background-img {display: none;}
+  * h1 {font-size: medium;}
 }
 
 footer {
@@ -71,24 +78,22 @@ footer {
   right: 0;
 }
 
-/* Якорь на бэкграунд
 .anchor {
-
+ 
+  text-align: center;
+  padding: 5px 5px;
 }
 
-.anchor a:link {
+/* .anchor a:link {
   color: white;
   }
-
 .anchor a:visited {
   color: mintcream;
 }
-
 .anchor a:focus {
   background-color: white;
   color: black;
 }
-
 .anchor  a:hover {
   background-color: white;
   color: black;
@@ -100,27 +105,29 @@ footer {
 }
 
 .signin {
-
+  padding: 5px;
 }
 
 .signup {
-
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-.reg_style a:link {
+.signin a:link {
     color: white;
     }
 
-.reg_style a:visited {
+.signin a:visited {
     color: mintcream;
   }
 
-.reg_style a:focus {
+.signin a:focus {
     background-color: white;
     color: black;
   }
 
- .reg_style  a:hover {
+ .signin  a:hover {
     background-color: white;
     color: black;
   }
