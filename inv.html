@@ -5,14 +5,36 @@
     <title>Заголовок страницы!!!</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Альтернативный клиент Notion" />
-    <link rel="stylesheet" type="text/css" href="css/style_reg.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div>
+    <header>
       <a href="index.html"><img сlass="trello-logo-image" src="img/white_logo.png" /> </a>
+    </header>
+    <main>
+      <div class="bootstrap_cont">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </main>
+    <div>
         <!-- <form action="inv_form" method="POST" target="_blank">
           <fieldset>
             <legend>Вход в Trello</legend>
@@ -35,35 +57,19 @@
             <input type="submit" />
           </fieldset>
         </form> -->
-        <div class="bootstrap_cont">
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+    <footer>  <div class="background-pic">
+        <div class="left">
+          <img src="img/left.png" />
+        </div>
+        <div class="right">
+          <img src="img/right.png" />
+        </div>
       </div>
-        <div class="background-pic">
-          <div class="left">
-            <img src="img/left.png" />
-          </div>
-          <div class="right">
-            <img src="img/right.png" />
-          </div>
-        </div>
-        <div class="background-pic_hidden">
-            <img src="img/right.png" />
-        </div>
+      <div class="background-pic_hidden">
+          <img src="img/right.png" />
+      </div>
+  </footer>
+      
     </div>
     
   </body>

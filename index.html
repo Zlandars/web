@@ -5,10 +5,11 @@
     <title>Заголовок страницы!!!</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Альтернативный клиент Notion" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <meta name="keywords" content="Trello, tasks, task manager, tasks manager"
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <script src="/js/script.js"></script>
   </head>
 
   <body>
@@ -26,7 +27,17 @@
       </header>
   <main style="background: linear-gradient(to bottom right, #0079bf, #5067c5);
   ">
-      <aside style="display: none;">Боковое меню в разработке</aside>
+      <aside>
+        <!-- Основная менюшка -->
+        <div id="mySidenav" class="sidenav"> 
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="/index.html">Главная</a>
+          <a href="/inv.html">Войти</a>
+          <a href="/reg.html">Регистрация</a>
+          <a href="javascript:void(0)" class="closewin" onclick="closeNav()">&times;</a>          
+        </div>
+        <span onclick="openNav()" class="menu_btn">&#9776; Менюшка</span>
+      </aside>
       <div class="descrip">
           <h1>
             Используя Trello, можно добиться более эффективной и слаженной работы

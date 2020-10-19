@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    line-height: 1.5; /*межстрочный интервал*/
+    text-align: center;
+  }
+  
+.background-pic_hidden {
+    display: none;
+    position: absolute;
+    z-index: -1; /*если здесь поставить 0, а на конент бутстрапа на 1 больше, то ничего не работает. Поэтому просто убрал z-index у бутстрапа*/
+    width: 90%; /*для выравнивания по центру*/
+    bottom: 0;
+  }
+  
+.background-pic {
+    display: block;
+    padding: 0 0;
+  }
+    
+.bootstrap_cont {
+    display: flex;
+    padding: 10% 0;
+    height: auto;
+    justify-content: center;
+  }
+  
+@media screen and (max-width: 650px) 
+                and (max-height: 575px) 
+    {
+      .background-pic {display: none;}
+      .background-pic_hidden {display: block}
+    }
+  
+@media screen and (max-width: 819px) 
+    {
+      .background-pic {display: none;}
+      .background-pic_hidden {display: block}
+    }
+  
+@media screen and (max-height: 424px) 
+    {
+      .background-pic {display: none;}
+      .bootstrap_cont {justify-content: center;}
+      .background-pic_hidden {display: block}
+    }  
+  
+.form-row {
+    display: flex;
+    width: 80%;
+    padding: 0 10px;
+  }
+  
+.trello-logo-image {
+    height: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* justify-content: center; не выравнивает лого по центру???? */
+  }
+  
+.background-pic {
+    height: 100%;
+    width: 100%;
+  }
+  
+.left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+.right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  
+  
