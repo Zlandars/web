@@ -1,5 +1,6 @@
 $primary-color: linear-gradient(to bottom right, #0079bf, #5067c5);
 @import 'style_reg';
+@import 'style_sidenav';
 
 * {
   box-sizing: border-box;
@@ -29,70 +30,8 @@ $primary-color: linear-gradient(to bottom right, #0079bf, #5067c5);
   display: inline-flex;
 }
 
-/* Боковое меню */
-.menu_btn {
-  background-color: $primary-color;
-  display: none;
-  cursor: pointer;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 5px;
-}
-
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 ширина - изменить это с помощью JavaScript */
-  position: fixed; /* Оставайтесь на месте */
-  z-index: 1; /* Оставайтесь сверху */
-  top: 0; /* Оставайтесь наверху */
-  right: 0;
-  background-color: #111; /* Фон черный*/
-  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
-  padding-top: 60px; /* Поместите контент в 60px сверху */
-  transition: 0.5s; /* 0.5 второй эффект перехода слайда в боковой навигации */
-}
-
-/* Ссылки меню навигации */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-  text-align: left;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.closebtn {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  font-size: 36px;
-}
-.closewin {
-  top: 0;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  right: 250px;
-}
-
-/* На экранах меньшего размера, где высота меньше 450px, измените стиль sidenav (меньше отступов и меньший размер шрифта) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 @media screen and (max-width: 500px) 
   {
-    .menu_btn {display: block;}
     .reg_style {display: none;}
   }
 

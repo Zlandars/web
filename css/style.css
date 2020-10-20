@@ -89,38 +89,6 @@
   bottom: 0;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  /* padding: 0; */
-  line-height: 1.5;
-  /* межстрочный интервал */
-  font-family: "Charlie Text", sans-serif;
-  text-align: center;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-  align-items: center;
-  color: #fff;
-  background: linear-gradient(to bottom right, #0079bf, #5067c5);
-}
-
-.descrip {
-  color: #fff;
-  padding: 10px 20%;
-  text-align: left;
-  font-weight: 500;
-  font-size: medium;
-}
-
-/* Навигационное меню */
-.reg_style {
-  display: inline-flex;
-}
-
 /* Боковое меню */
 .menu_btn {
   background-color: linear-gradient(to bottom right, #0079bf, #5067c5);
@@ -200,7 +168,40 @@
   .menu_btn {
     display: block;
   }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* padding: 0; */
+  line-height: 1.5;
+  /* межстрочный интервал */
+  font-family: "Charlie Text", sans-serif;
+  text-align: center;
+}
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  color: #fff;
+  background: linear-gradient(to bottom right, #0079bf, #5067c5);
+}
+
+.descrip {
+  color: #fff;
+  padding: 10px 20%;
+  text-align: left;
+  font-weight: 500;
+  font-size: medium;
+}
+
+/* Навигационное меню */
+.reg_style {
+  display: inline-flex;
+}
+
+@media screen and (max-width: 500px) {
   .reg_style {
     display: none;
   }
