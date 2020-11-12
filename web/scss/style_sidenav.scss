@@ -1,4 +1,6 @@
 /* Боковое меню */
+$primary-color: linear-gradient(to bottom right, #0079bf, #5067c5);
+
 .menu_btn {
     background-color: $primary-color;
     display: none;
@@ -46,8 +48,8 @@
     font-size: 36px;
   }
   .closewin {
-    top: 0;
     position: absolute;
+    top: 0;
     height: 100%;
     width: 100%;
     right: 250px;
@@ -58,7 +60,4 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-  @media screen and (max-width: 500px) 
-    {
-      .menu_btn {display: block;}
-    }
+

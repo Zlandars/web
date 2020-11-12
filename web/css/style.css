@@ -147,8 +147,8 @@
 }
 
 .closewin {
-  top: 0;
   position: absolute;
+  top: 0;
   height: 100%;
   width: 100%;
   right: 250px;
@@ -164,11 +164,6 @@
     font-size: 18px;
   }
 }
-@media screen and (max-width: 500px) {
-  .menu_btn {
-    display: block;
-  }
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -177,6 +172,7 @@
   /* межстрочный интервал */
   font-family: "Charlie Text", sans-serif;
   text-align: center;
+  user-select: none;
 }
 
 .nav {
@@ -201,11 +197,6 @@
   display: inline-flex;
 }
 
-@media screen and (max-width: 500px) {
-  .reg_style {
-    display: none;
-  }
-}
 .background-img {
   position: relative;
   text-align: center;
@@ -235,9 +226,17 @@
     font-size: medium;
   }
 }
+@media screen and (max-width: 600px) {
+  .menu_btn {
+    display: block;
+  }
+
+  .reg_style {
+    display: none;
+  }
+}
 footer {
   display: flex;
-  position: absolute;
   bottom: 0%;
   width: 100%;
   justify-content: center;
@@ -301,5 +300,3 @@ footer {
   background-color: white;
   color: black;
 }
-
-/*# sourceMappingURL=style.css.map */
